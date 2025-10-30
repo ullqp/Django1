@@ -14,7 +14,7 @@ class Command(BaseCommand):
             'products_fixture.json'
         ]
 
-        fixtures = ["catalog/management/fixtures/"+i for i in fixtures]
+        fixtures = ["fixtures/"+i for i in fixtures]
 
         for f in fixtures:
             call_command('loaddata', f)
